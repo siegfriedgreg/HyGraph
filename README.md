@@ -15,6 +15,10 @@ To compile, create a directory named build and run cmake in this directory.
 mkdir build
 cd build
 cmake ..
+
+CUDA LIBRARIES: /folders/libcudart.so
+CUDA LIBRARY: /folders/stubs/libcuda.so
+
 ```
 
 # Usage
@@ -22,6 +26,7 @@ To run HyGraph, run `main`.
 
 ```
 ./main [graph file] [algorithm]
+
 ```
 
 Where algorithm should be one of the following: `bfs` (Breadth-first search), `pr` (PageRank), `sssp` (Single-Source Shortest Path), `cc` (Connected components). The graph file should be in human-readable format containing one edge per line where each edge consists of a pair of two number. Duplicate edges, empty lines or comments (start with `#` or `*` or `-`) are ignored. Example of valid graph file:
@@ -31,6 +36,7 @@ Where algorithm should be one of the following: `bfs` (Breadth-first search), `p
 2 3
 3 5
 1 5
+
 ```
 
 To decrease graph loading time, it is possible to convert the graph into a binary format using the `convert` program.
