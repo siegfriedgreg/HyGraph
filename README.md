@@ -26,6 +26,7 @@ To run HyGraph, run `main`.
 
 ```
 ./main [graph file] [algorithm]
+success with *.el files.
 
 ```
 
