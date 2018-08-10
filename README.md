@@ -17,7 +17,8 @@ cd build
 cmake ..
 
 CUDA LIBRARIES: /folders/libcudart.so
-CUDA LIBRARY: /folders/stubs/libcuda.so
+Modified the CMakeLists.txt file and added a line setting ->
+set (CUDA_CUDA_LIBRARY "/opt/packages/cuda/7.5/lib64/stubs/libcuda.so")
 
 ```
 
