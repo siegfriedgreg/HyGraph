@@ -12,9 +12,9 @@ HyGraph requires the following packages (in parentheses are the recommended vers
 To compile, create a directory named build and run cmake in this directory.
 
 ```
-mkdir build
-cd build
+mkdir build/ && cd build/
 cmake ..
+make
 
 CUDA LIBRARIES: /folders/libcudart.so
 Modified the CMakeLists.txt file and added a line setting ->
