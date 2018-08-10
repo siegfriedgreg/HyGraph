@@ -4,6 +4,8 @@ cmake_minimum_required (VERSION 2.8)
 find_package(CUDA REQUIRED)
 find_package(OpenMP REQUIRED)
 
+set (CUDA_CUDA_LIBRARY "/opt/packages/cuda/7.5/lib64/stubs/libcuda.so")
+
 message(STATUS "CUDA LIBRARIES: ${CUDA_LIBRARIES}")
 message(STATUS "CUDA LIBRARY:   ${CUDA_CUDA_LIBRARY}")
 
