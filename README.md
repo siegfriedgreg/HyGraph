@@ -11,11 +11,9 @@ HyGraph requires the following packages (in parentheses are the recommended vers
 
 To compile, create a directory named build and run cmake in this directory.
 
-```
         mkdir build/ && cd build/
         cmake ..
         make
-...
 
 
 I modified the CMakeLists.txt file and added the setting ->
@@ -26,27 +24,21 @@ I modified the CMakeLists.txt file and added the setting ->
 # Usage
 To run HyGraph, run `main`.
 
-```
-./main [graph file] [algorithm]
-success with *.el files.
+        ./main [graph file] [algorithm]
+        success with *.el files.
 
-```
 
 Where algorithm should be one of the following: `bfs` (Breadth-first search), `pr` (PageRank), `sssp` (Single-Source Shortest Path), `cc` (Connected components). The graph file should be in human-readable format containing one edge per line where each edge consists of a pair of two number. Duplicate edges, empty lines or comments (start with `#` or `*` or `-`) are ignored. Example of valid graph file:
 
-```
-1 2
-2 3
-3 5
-1 5
+        1 2
+        2 3
+        3 5
+        1 5
 
-```
 
 To decrease graph loading time, it is possible to convert the graph into a binary format using the `convert` program.
 
-```
-./convert [text graph file] [binary graph file]
-```
+        ./convert [text graph file] [binary graph file]
 
 Where the binary graph file should be have `.bin` appended. For example, `./convert test.txt test.txt.bin`.
 
