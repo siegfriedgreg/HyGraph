@@ -4,23 +4,25 @@ HyGraph [1] is a graph-processing system designed for hybrid platforms consistin
 
 # Compile 
 HyGraph requires the following packages (in parentheses are the recommended versions):
-* NVIDIA CUDA Compiler (at least 7.0)
-* Any C compiler (tested with gcc 4.8.2)
-* GNU Make
-* CMake
+* NVIDIA CUDA Compiler (8.0)
+* Any C compiler (tested with gcc 5.3.0)
+* GNU Make (make/4.2.1)
+* CMake (3.7.2)
 
 To compile, create a directory named build and run cmake in this directory.
 
 ```
-mkdir build/ && cd build/
-cmake ..
-make
+        mkdir build/ && cd build/
+        cmake ..
+        make
+...
 
-CUDA LIBRARIES: /folders/libcudart.so
-Modified the CMakeLists.txt file and added a line setting ->
-set (CUDA_CUDA_LIBRARY "/opt/packages/cuda/7.5/lib64/stubs/libcuda.so")
 
-```
+
+I modified the CMakeLists.txt file and added the setting ->
+...
+        set (CUDA_CUDA_LIBRARY "/opt/packages/cuda/8.0/lib64/stubs/libcuda.so")
+...
 
 # Usage
 To run HyGraph, run `main`.
