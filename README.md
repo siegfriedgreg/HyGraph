@@ -15,7 +15,7 @@ To compile, create a directory named build and run cmake in this directory.
         mkdir build/ && cd build/
         cmake ..
         make
-
+...
 
 
 I modified the CMakeLists.txt file and added the setting ->
