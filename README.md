@@ -15,14 +15,13 @@ To compile, create a directory named build and run cmake in this directory.
         mkdir build/ && cd build/
         cmake ..
         make
-...
 
 
 
 I modified the CMakeLists.txt file and added the setting ->
-...
+
         set (CUDA_CUDA_LIBRARY "/opt/packages/cuda/8.0/lib64/stubs/libcuda.so")
-...
+
 
 # Usage
 To run HyGraph, run `main`.
