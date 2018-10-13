@@ -40,7 +40,7 @@ To decrease graph loading time, it is possible to convert the graph into a binar
 
         ./convert [text graph file] [binary graph file]
 
-Where the binary graph file should be have `.bin` appended. For example, `./convert test.txt test.txt.bin`.
+Where the binary graph file should have `.bin` appended. For example, `./convert test.txt test.txt.bin`.
 
 
 
